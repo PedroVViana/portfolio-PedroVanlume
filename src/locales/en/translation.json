@@ -1,0 +1,41 @@
+
+{
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "Language",
+    
+    "vanLume": "Van-Lume",
+    "softwareDeveloper": "Software Developer",
+    "webDesigner": "Web Designer",
+    "heyIAm": "Hey, I am",
+    "buildingYourDream": "Building your dream",
+    "pixel": "pixel",
+    "by": "by",
+    "readMore": "Read More",
+
+    "aboutTitle": "Why hire me for your",
+    "nextproject": "next project?",
+    "aboutDescription":"I am a professional with a degree in computer science, with more than two years of experience, including 1 year of experience working as a software developer and 6 months as a freelancer.",
+    "experienceYears": "2 years",
+    "experience": "Experience",
+    "projectsGithub": "+50 Projects",
+    "portfolioButton": "Portfolio",
+    "downloadCVButton": "Download CV",
+    "journeyTitle": "My Academic and Professional Journey",
+    "education": "Education",
+    "uiDesign": "UI Design Training",
+    "webAccessibility": "Web Accessibility Training",
+    "frontendTraining": "Front-end Training",
+    "computerScienceDegree": "Computer Science Degree",
+    "professionalExperience": "Professional Experience",
+    "webDeveloper": "Web Developer",
+    "freelancer": "Freelancer",
+    "companyOPitBlast": "O-PitBlast",
+    "companyLab": "Lab UniFBV",
+    "companyFocusDigital": "Focus Digital Marketing",
+    "companyAfago": "Afago"
+    
+  }
+  
