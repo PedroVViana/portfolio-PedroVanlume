@@ -34,5 +34,64 @@
     "companyOPitBlast": "O-PitBlast",
     "companyLab": "Lab UniFBV",
     "companyFocusDigital": "Focus Digital Marketing",
-    "companyAfago": "Afago"
+    "companyAfago": "Afago",
+
+    "tools": "Herramientas",
+    "skills": "Habilidades",
+    "and": "y",
+    "Front-end": "Front-end",
+    "Back-end": "Back-end",
+    "Desenvolvimento Web": "Desarrollo Web",
+    "Desenvolvimento de Software": "Desarrollo de Software",
+
+   "portfolioTitle": "Mi Portafolio",
+    "viewMoreProjects": "Ver Más Proyectos",
+    "github": "GitHub",
+    "demo": "Demo",
+    "viewMore": "Ver Más",
+    "technologies": "Tecnologías",
+    "project1Title": "VL Imports",
+    "project1Description": "Proyecto del laboratorio digital de la universidad, que consiste en la creación de un folleto digital para ayudar a las personas a conocer más sobre la ley LGPD.",
+    "project2Title": "Focus Digital",
+    "project2Description": "Proyecto freelance para una página de destino para convertir clientes potenciales para una empresa de consultoría de marketing digital.",
+    "project3Title": "Afago",
+    "project3Description": "Proyecto freelance para una página de destino para vender productos para una tienda de cestas de desayuno.",
+    "project4Title": "Pica-pau Aire para Autos",
+    "project4Description": "Proyecto freelance para una empresa de reparación de aire acondicionado para automóviles.",
+    "project5Title": "Plantilla Psicóloga Conductual",
+    "project5Description": "Proyecto de plantilla de sitio web para psicólogos que utilizan la metodología de terapia cognitivo-conductual.",
+    "project6Title": "Chat en Tiempo Real",
+    "project6Description": "Proyecto web full-stack de un chat en tiempo real, con un servidor en Node.js y Express y un front-end en React.js.",
+
+    "testimonialsTitle": "¿Qué Dicen Nuestros Clientes?",
+    "clickImageToView": "Haz clic en la imagen para ver más",
+    "client1": "Cliente 1",
+    "client2": "Cliente 2",
+    "client3": "Cliente 3",
+    "enlargedImage": "Imagen Ampliada",
+
+    "futureProjects": {
+    "title": "Proyectos Futuros",
+    "projects": [
+      {
+        "title": "Plataforma de Blog",
+        "description": "Desarrollo de una plataforma de blog para realizar publicaciones",
+        "tech": ["Next.js", "Node.js", "TypeScript", "MongoDB"]
+      },
+      {
+        "title": "Confianza Soluciones",
+        "description": "Una página de aterrizaje para una empresa de financiamiento de crédito inmobiliario",
+        "tech": ["Vite", "Tailwind CSS", "React"]
+      },
+      {
+        "title": "Plantilla Psicóloga Psicoanálisis",
+        "description": "Plantilla de sitio web para psicólogos que utilizan la metodología de terapia psicoanalítica.",
+        "tech": ["Vite", "Tailwind CSS", "React"]
+      }
+    ]
+  },
+
+  "footer": {
+    "copyRight": "© {{year}} Pedro Van-Lume. Todos los derechos reservados."
+  }
   }

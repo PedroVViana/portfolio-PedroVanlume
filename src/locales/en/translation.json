@@ -35,7 +35,66 @@
     "companyOPitBlast": "O-PitBlast",
     "companyLab": "Lab UniFBV",
     "companyFocusDigital": "Focus Digital Marketing",
-    "companyAfago": "Afago"
-    
+    "companyAfago": "Afago",
+
+
+    "tools": "Tools",
+    "skills": "Skills",
+    "and": "and",
+    "Front-end": "Front-end",
+    "Back-end": "Back-end",
+    "Desenvolvimento Web": "Web Development",
+    "Desenvolvimento de Software": "Software Development",
+
+    "portfolioTitle": "My Portfolio",
+    "viewMoreProjects": "View More Projects",
+    "github": "GitHub",
+    "demo": "Demo",
+    "viewMore": "View More",
+    "technologies": "Technologies",
+    "project1Title": "VL Imports",
+    "project1Description": "A digital lab project at the university, consisting of creating a digital booklet to help people learn more about the LGPD law.",
+    "project2Title": "Focus Digital",
+    "project2Description": "Freelance project for a landing page to convert leads for a digital marketing consulting company.",
+    "project3Title": "Afago",
+    "project3Description": "Freelance project for a landing page to sell products for a breakfast basket store.",
+    "project4Title": "Pica-pau Air for Cars",
+    "project4Description": "Freelance project for a car air conditioning repair company.",
+    "project5Title": "Behavioral Psychologist Template",
+    "project5Description": "A website template project for psychologists using cognitive-behavioral therapy methodology.",
+    "project6Title": "Real-Time Chat",
+    "project6Description": "Full-stack web project of a real-time chat application, with a Node.js and Express server and a React.js frontend.",
+
+    "testimonialsTitle": "What Our Clients Say?",
+    "clickImageToView": "Click on the image to view more",
+    "client1": "Client 1",
+    "client2": "Client 2",
+    "client3": "Client 3",
+    "enlargedImage": "Enlarged Image",
+
+    "futureProjects": {
+    "title": "Future Projects",
+    "projects": [
+      {
+        "title": "Blog Platform",
+        "description": "Development of a blog platform for posting articles",
+        "tech": ["Next.js", "Node.js", "TypeScript", "MongoDB"]
+      },
+      {
+        "title": "Trust Solutions",
+        "description": "A landing page for a real estate credit financing company",
+        "tech": ["Vite", "Tailwind CSS", "React"]
+      },
+      {
+        "title": "Psychoanalysis Psychologist Template",
+        "description": "A website template for psychologists who use psychoanalytic therapy methodology.",
+        "tech": ["Vite", "Tailwind CSS", "React"]
+      }
+    ]
+  },
+
+  "footer": {
+    "copyRight": "© {{year}} Pedro Van-Lume. All rights reserved."
   }
+}
   

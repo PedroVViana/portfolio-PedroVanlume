@@ -1,12 +1,13 @@
 import React from 'react';
 import imgAbout from "../../assets/Perfil.png";
 import { useTranslation } from 'react-i18next';
+import resume from '../../assets/resume.pdf';
 
 function About() {
   const { t } = useTranslation();
 
   return (
-    <div className="w-screen h-auto min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-black via-[#060022] to-[#00093d] p-8 gap-8 overflow-hidden">
+    <div id='about' className="w-screen h-auto min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-black via-[#060022] to-[#00093d] p-8 gap-8 overflow-hidden">
       <h3 className="text-center text-white text-[clamp(18px,4vw,30px)] mt-12">
         {t('aboutTitle')} <span className="gradient-text">{t('nextproject')}</span>
       </h3>
@@ -23,10 +24,10 @@ function About() {
             </p>
             
             <div className="flex justify-center gap-2">
-              <a href="#Portfolio" className="px-4 py-2 text-white text-[clamp(12px,4vw,14px)] bg-white/20 backdrop-blur-sm rounded-[5px] transition hover:bg-white/35 transform hover:translate-y-[-5px]">
+              <a href="#projects" className="px-4 py-2 text-white text-[clamp(12px,4vw,14px)] bg-white/20 backdrop-blur-sm rounded-[5px] transition hover:bg-white/35 transform hover:translate-y-[-5px]">
                 {t('portfolioButton')}
               </a>
-              <a href="#" target="_blank" className="px-4 py-2 text-white text-[clamp(12px,4vw,14px)] bg-white/20 backdrop-blur-sm rounded-[5px] transition hover:bg-white/35 transform hover:translate-y-[-5px]">
+              <a href={resume} download="resume.pdf" target="_blank" className="px-4 py-2 text-white text-[clamp(12px,4vw,14px)] bg-white/20 backdrop-blur-sm rounded-[5px] transition hover:bg-white/35 transform hover:translate-y-[-5px]">
                 {t('downloadCVButton')}
               </a>
             </div>
@@ -110,7 +111,7 @@ function About() {
               <li>
                 <div className="bg-white/10 p-4 rounded-[5px] shadow-sm transition hover:bg-white/20">
                   <span className="block text-sm gradient-text mb-2">Maio de 2024</span>
-                  <h4 className="text-lg mb-2">{t('webDeveloper')}</h4>
+                  <h4 className="text-lg mb-2">{t('freelancer')}</h4>
                   <p className="text-base text-white/80">{t('companyAfago')}</p>
                 </div>
               </li>

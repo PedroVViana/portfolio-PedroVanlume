@@ -1,17 +1,25 @@
 import React, { useState } from 'react';
 import 'tailwindcss/tailwind.css';
-import imgport1 from '../../assets/vl-dask.jpeg';
+import { useTranslation } from 'react-i18next';
+
+import imgport1 from '../../assets/portfolio/vl-dask.jpeg';
+import imgAfago from '../../assets/portfolio/afago.png';
+import imgAr from '../../assets/portfolio/ar.png';
+import imgFocus from '../../assets/portfolio/focus.png';
+import imgChat from '../../assets/portfolio/RealChat.png';
+import imgPsicoComport from '../../assets/portfolio/psico.png';
 
 const projects = [
-  { id: 1, title: 'Projeto 1', image: imgport1, description: 'Projeto do laboratório digital da faculdade, que consiste na criação de uma cartilha digital que ajude as pessoas a conhecer mais sobre a lei LGPD.', tech: ['React', 'Node.js', 'CSS'], repo: '#', demo: '#'},
-  { id: 2, title: 'Projeto 2', image: 'https://via.placeholder.com/800x600', description: 'Descrição detalhada do Projeto 2, com uma quantidade muito maior de informações para testar o layout da modal.', tech: ['HTML', 'JavaScript', 'CSS'], repo: '#', demo: '#'},
-  { id: 3, title: 'Projeto 3', image: 'https://via.placeholder.com/800x600', description: 'Descrição detalhada do Projeto 3', tech: ['Python', 'Django', 'HTML'], repo: '#', demo: '#'},
-  { id: 4, title: 'Projeto 4', image: 'https://via.placeholder.com/800x600', description: 'Descrição detalhada do Projeto 4', tech: ['Vue.js', 'Node.js', 'CSS'], repo: '#', demo: '#'},
-  { id: 5, title: 'Projeto 5', image: 'https://via.placeholder.com/800x600', description: 'Descrição detalhada do Projeto 5', tech: ['Angular', 'JavaScript', 'SCSS'], repo: '#', demo: '#'},
-  { id: 6, title: 'Projeto 6', image: 'https://via.placeholder.com/800x600', description: 'Descrição detalhada do Projeto 6', tech: ['Ruby', 'Rails', 'HTML'], repo: '#', demo: '#'}
+  { id: 1, title: 'project1Title', image: imgport1, description: 'project1Description', tech: ['HTML', 'Javascript', 'CSS'], repo: 'https://github.com/PedroVViana/VanlumeImports', demo: 'https://vanlumeimports.netlify.app/'},
+  { id: 2, title: 'project2Title', image: imgFocus, description: 'project2Description', tech: ['HTML', 'JavaScript', 'CSS', 'Bootstrap'], demo: 'https://lpfocusdigital.com/'},
+  { id: 3, title: 'project3Title', image: imgAfago, description: 'project3Description', tech: ['HTML', 'JavaScript', 'CSS', 'Bootstrap'], demo: 'https://comafago.com.br/'},
+  { id: 4, title: 'project4Title', image: imgAr, description: 'project4Description', tech: ['HTML', 'JavaScript', 'CSS', 'Bootstrap'], demo: 'https://pica-pau-ar.netlify.app/'},
+  { id: 5, title: 'project5Title', image: imgPsicoComport, description: 'project5Description', tech: ['Vite', 'React', 'Javascript','Tailwind CSS'], repo: 'https://github.com/PedroVViana/website-psicologa-comportamental', demo: 'https://pedrovviana.github.io/website-psicologa-comportamental/'},
+  { id: 6, title: 'project6Title', image: imgChat, description: 'project6Description', tech: ['Node.js', 'Express', 'React.js', 'CSS', 'Socket.io'], repo: 'https://github.com/PedroVViana/Real-Time-Chat'}
 ];
 
 function Portfolio() {
+  const { t } = useTranslation();
   const [modalData, setModalData] = useState(null);
 
   const handleViewMore = (project) => {
@@ -23,26 +31,26 @@ function Portfolio() {
   };
 
   return (
-    <div className='about py-16 px-4 md:px-8 lg:px-16'>
+    <div id='projects' className='about py-16 px-4 md:px-8 lg:px-16'>
       <h2 className='text-4xl gradient-text font-bold text-center mb-12 text-gray-900'>
-        Meu Portfólio
+        {t('portfolioTitle')}
       </h2>
 
       <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
         {projects.map((project) => (
           <div key={project.id} className='relative BGblur rounded-xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl'>
-            <img src={project.image} alt={project.title} className='w-full h-60 object-cover transition-transform duration-300 transform hover:scale-110'/>
+            <img src={project.image} alt={t(project.title)} className='w-full h-60 object-contain md:object-cover transition-transform duration-300 transform hover:scale-110'/>
             <div className='relative px-4 mb-5'>
-              <h3 className='text-2xl font-semibold gradient-text mt-5 mb-10'>{project.title}</h3>
+              <h3 className='text-2xl font-semibold gradient-text mt-5 mb-10'>{t(project.title)}</h3>
               <div className='flex flex-col md:flex-row gap-2'>
-                <a href={project.repo} className='bg-black text-white py-2 px-4 rounded-lg text-center transition-colors duration-300 hover:bg-gray-900 flex items-center justify-center w-auto'>
-                  <i className='bx bxl-github text-xl mr-2'></i> GitHub
+                <a href={project.repo} target='_blank' className='bg-black text-white py-2 px-4 rounded-lg text-center transition-colors duration-300 hover:bg-gray-900 flex items-center justify-center w-auto'>
+                  <i className='bx bxl-github text-xl mr-2'></i> {t('github')}
                 </a>
-                <a href={project.demo} className='bg-green-600 text-white py-2 px-4 rounded-lg text-center transition-colors duration-300 hover:bg-green-700 flex items-center justify-center w-auto'>
-                  <i className='bx bx-world text-xl mr-2'></i> Demo
+                <a href={project.demo} target='_blank' className='bg-green-600 text-white py-2 px-4 rounded-lg text-center transition-colors duration-300 hover:bg-green-700 flex items-center justify-center w-auto'>
+                  <i className='bx bx-world text-xl mr-2'></i> {t('demo')}
                 </a>
                 <button onClick={() => handleViewMore(project)} className='bg-blue-600 text-white py-2 px-4 rounded-lg text-center transition-colors duration-300 hover:bg-blue-700 flex items-center justify-center w-auto'>
-                  <i className='bx bx-show text-xl mr-2'></i> Ver Mais
+                  <i className='bx bx-show-alt text-xl mr-2'></i> {t('viewMore')}
                 </button>
               </div>
             </div>
@@ -50,33 +58,28 @@ function Portfolio() {
         ))}
       </div>
 
-      {/* Botão "Ver Mais Projetos" */}
-      <div className='text-center mt-12'>
-        <a href='https://example.com' target='_blank' rel='noopener noreferrer' className='gradient-bg text-white py-3 px-6 rounded-lg text-lg transition-colors duration-300'>
-          Ver Mais Projetos
-        </a>
-      </div>
-
       {modalData && (
-        <div className='fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center backdrop-blur-lg z-50 p-4'>
-          <div className='relative BGblur2 rounded-xl w-full max-w-4xl h-auto max-h-screen p-8 overflow-auto shadow-xl backdrop-blur-sm'>
-            <button onClick={handleCloseModal} className='absolute top-4 right-4 text-4xl text-white hover:text-gray-200 transition-transform transform hover:scale-125'>
-              <i className='bx bx-x'></i>
+        <div className='fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-80'>
+          <div className='relative BGblur  rounded-xl shadow-xl p-8 max-w-lg w-full'>
+            <button onClick={handleCloseModal} className='absolute top-2 right-2 text-gray-100 hover:text-gray-400'>
+              <i className='bx bx-x text-3xl'></i>
             </button>
-            <img src={modalData.image} alt={modalData.title} className='w-full h-48 object-contain rounded-xl mb-6'/>
-            <h3 className='text-3xl font-semibold text-gray-100 mb-4'>{modalData.title}</h3>
-            <p className='text-gray-100 mb-4'>{modalData.description}</p>
-            <div className='flex flex-wrap gap-2 mb-6'>
+            <img src={modalData.image} alt={t(modalData.title)} className='w-full h-60 object-contain rounded mb-4'/>
+            <h3 className='text-2xl font-bold gradient-text mb-4'>{t(modalData.title)}</h3>
+            <p className='text-white'>{t(modalData.description)}</p>
+            <div className='flex flex-wrap mt-4'>
               {modalData.tech.map((tech, index) => (
-                <span key={index} className='gradient-bg text-gray-100 py-1 px-3 rounded-lg text-sm'>{tech}</span>
+                <span key={index} className='bg-blue-100 text-blue-800 text-sm font-semibold mt-2 mr-2 px-2.5 py-0.5 rounded'>{tech}</span>
               ))}
             </div>
-            <div className='flex flex-col md:flex-row gap-4'>
-              <a href={modalData.repo} className='bg-black text-white py-2 px-4 rounded-lg text-center transition-colors duration-300 hover:bg-gray-900 flex items-center justify-center w-auto'>
-                <i className='bx bxl-github text-xl mr-2'></i> GitHub
-              </a>
-              <a href={modalData.demo} className='bg-green-600 text-white py-2 px-4 rounded-lg text-center transition-colors duration-300 hover:bg-green-700 flex items-center justify-center w-auto'>
-                <i className='bx bx-world text-xl mr-2'></i> Demo
+            <div className='flex gap-2 mt-6'>
+              {modalData.repo && (
+                <a href={modalData.repo} target='_blank' className='bg-black text-white py-2 px-4 rounded-lg text-center transition-colors duration-300 hover:bg-gray-900 flex items-center justify-center w-auto'>
+                  <i className='bx bxl-github text-xl mr-2'></i> {t('github')}
+                </a>
+              )}
+              <a href={modalData.demo} target='_blank' className='bg-green-600 text-white py-2 px-4 rounded-lg text-center transition-colors duration-300 hover:bg-green-700 flex items-center justify-center w-auto'>
+                <i className='bx bx-world text-xl mr-2'></i> {t('demo')}
               </a>
             </div>
           </div>
@@ -87,3 +90,4 @@ function Portfolio() {
 }
 
 export default Portfolio;
+
