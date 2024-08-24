@@ -55,21 +55,21 @@ function About() {
             <ul className="space-y-5">
               <li>
                 <div className="bg-white/10 p-4 rounded-[5px] shadow-sm transition hover:bg-white/20">
-                  <span className="block text-sm gradient-text">14 de novembro de 2023</span>
+                  <span className="block text-sm gradient-text">{t('14denovembrode2023')}</span>
                   <h4 className="text-lg mb-2">{t('uiDesign')}</h4>
                   <p className="text-base text-white/80">Alura</p>
                 </div>
               </li>
               <li>
                 <div className="bg-white/10 p-4 rounded-[5px] shadow-sm transition hover:bg-white/20">
-                  <span className="block text-sm gradient-text mb-2">07 de abril de 2023</span>
+                  <span className="block text-sm gradient-text mb-2">{t('07deabrilde2023')}</span>
                   <h4 className="text-lg mb-2">{t('webAccessibility')}</h4>
                   <p className="text-base text-white/80">Alura</p>
                 </div>
               </li>
               <li>
                 <div className="bg-white/10 p-4 rounded-[5px] shadow-sm transition hover:bg-white/20">
-                  <span className="block text-sm gradient-text mb-2">09 de março de 2022</span>
+                  <span className="block text-sm gradient-text mb-2">{t('09demarçode2022')}</span>
                   <h4 className="text-lg mb-2">{t('frontendTraining')}</h4>
                   <p className="text-base text-white/80">Alura</p>
                 </div>
@@ -89,28 +89,28 @@ function About() {
             <ul className="space-y-5">
               <li>
                 <div className="bg-white/10 p-4 rounded-[5px] shadow-sm transition hover:bg-white/20">
-                  <span className="block text-sm gradient-text mb-2">Março de 2022 - Abril de 2023</span>
+                  <span className="block text-sm gradient-text mb-2">{t('Marçode2022Abrilde2023')}</span>
                   <h4 className="text-lg mb-2">{t('softwareDeveloper')}</h4>
                   <p className="text-base text-white/80">{t('companyOPitBlast')}</p>
                 </div>
               </li>
               <li>
                 <div className="bg-white/10 p-4 rounded-[5px] shadow-sm transition hover:bg-white/20">
-                  <span className="block text-sm gradient-text mb-2">Setembro de 2021 - Novembro de 2021</span>
+                  <span className="block text-sm gradient-text mb-2">{t('Setembrode2021Novembrode2021')}</span>
                   <h4 className="text-lg mb-2">{t('webDeveloper')}</h4>
                   <p className="text-base text-white/80">{t('companyLab')}</p>
                 </div>
               </li>
               <li>
                 <div className="bg-white/10 p-4 rounded-[5px] shadow-sm transition hover:bg-white/20">
-                  <span className="block text-sm gradient-text mb-2">Abril de 2024</span>
+                  <span className="block text-sm gradient-text mb-2">{t('Abrilde2024')}</span>
                   <h4 className="text-lg mb-2">{t('freelancer')}</h4>
                   <p className="text-base text-white/80">{t('companyFocusDigital')}</p>
                 </div>
               </li>
               <li>
                 <div className="bg-white/10 p-4 rounded-[5px] shadow-sm transition hover:bg-white/20">
-                  <span className="block text-sm gradient-text mb-2">Maio de 2024</span>
+                  <span className="block text-sm gradient-text mb-2">{t('Maiode2024')}</span>
                   <h4 className="text-lg mb-2">{t('freelancer')}</h4>
                   <p className="text-base text-white/80">{t('companyAfago')}</p>
                 </div>

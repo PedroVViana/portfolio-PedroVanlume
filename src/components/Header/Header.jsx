@@ -40,7 +40,7 @@ function Header() {
   return (
     <header className={`fixed w-full top-0 z-10 p-4 ${isScrolled ? 'bg-white bg-opacity-10 duration-500 backdrop-blur-md' : 'bg-transparent'}`}>
       <div className="mx-auto px-10 flex justify-between items-center">
-        <h1 className="text-2xl text-white font-bold">Pedro Van-Lume</h1>
+        <h1 className="text-2xl text-primary font-bold">Pedro Van-Lume</h1>
         <nav className="hidden md:flex space-x-4 items-center">
           <a href="#home" className="menu-link">
             <FaHome className="mr-2" /> {t('home')}
@@ -56,10 +56,10 @@ function Header() {
           </a>
           <div className="relative">
             <button 
-              className="text-gray-100 menu-link flex items-center" 
+              className="text-primary menu-link flex items-center" 
               onClick={toggleDropdown}
             >
-              <span className="mr-2">{t('language')}</span>
+              <span className="mr-2 text-primary">{t('language')}</span>
               <FaChevronDown />
             </button>
             {isDropdownOpen && (

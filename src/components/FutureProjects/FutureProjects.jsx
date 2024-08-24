@@ -36,7 +36,7 @@ function FutureProjects() {
 
   return (
     <section id='contact' className="py-16 px-4 md:px-8 lg:px-16 bgTools">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+      <h2 className="text-4xl gradient-text font-bold text-center mb-12">
         {t('futureProjects.title')}
       </h2>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

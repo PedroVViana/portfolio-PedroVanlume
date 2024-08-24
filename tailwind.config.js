@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#7252ff' 
+      },
       fontSize: {
         'custom-lg': '16px', // Adiciona um tamanho de fonte personalizado
       },
